@@ -1,201 +1,585 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="author" content="Eduardo_Bagues"/>
-<title>Manual de HTML5</title>
-<link rel="StyleSheet" media="screen" type="text/css" href="estilos.css"/> 
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Eduardo_Bagues"/>
+		<title>Manual de HTML5</title>
+		<link rel="StyleSheet" media="screen" type="text/css" href="estilos.css"/> 
+	</head>
 <body>
-
+<div class="cuerpo">
 <!-- Marca para moverse hasta aquí-->
 <p id="Arriba"></p>
-<!-- fin de la marca -->
-
-<div class="cabecera">
-<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width="200px" height="100px;">
-	<div class="titulo">
-    	<h1 style="font-family:'Comic Sans MS'; font-size:44px;">Manual de HTML5</h1>
-    </div>
-</div>
 
 
-<!-- &lt   &gt-->
-<h4>Bienvenido al Manual de HTML5 donde le vamos a explicar bla bla bla ....</h4>
-<h3>Estructura</h3>
-
-<div id="estruct">
-<p>Todo documento html debe la siguiente estructura básica</p>
-<p>&lt;!DOCTYPE html&gt;<br>&lt;html lang="lenguaje_de_mi_página"&gt;<br>&lt;head&gt;<br>&lt;meta tipo="descripcion_del_tipo"&gt;<br>&lt;title&gt;Título de la página&lt;/title&gt;<br>&lt;link rel="StyleSheet" media="screen" type="text/css" href="estilos.css"/&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</p>
-</div>
-
-<p>Donde &lt;!DOCTYPE html&gt; es el tipo de documento, en nuestro caso es html</p>
-<p>&lt;html lang="es"&gt; es la etiqueta que define el lenguaje de nuestra página de cara a los buscadores</p>
-<p>La etiqueta de apertura &lt;head&gt; y de cierre &lt;/head&gt; hace referencia a la cabecera de nuestro documento</p>
-<p>Las metaetiquetas &lt;meta atributo="valor"&gt; dan información de diversa índole sobre nuestra página a los buscadores</p>
-<p>La etiqueta &lt;title&gt; y &lt;/title&gt; contiene el título descriptivo de la página actual, es el texto que aparece en la pestaña del navegador, importante de cara al SEO.</p>
-
-<p>Referida a la página de estilos &lt;link rel="StyleSheet" media="screen" type="text/css" href="estilos.css"/&gt; la cual contendrá todos los los estilos de nuestra web</p>
-
-<p>Estiquetas &lt;body&gt; y &lt;body/&gt; aquí es donde va el cuerpo del documento, nuestra página en sí, lo que verá el usuario</p>
-
-<p>&lt;/html&gt; etiqueta de cierre, fin del documento html</p>
-
-<h2>Comentarios en el documento HTML</h2>
-<p>Los comentarios en el documento html ayudan al desarrollador a organizarse dentro del código fuente. Estos comentarios le pueden indicar tales cosas como inicio y fin de una estructura, sección en la que se encuentra, funcionamiento de un scrip o función, características de un código ...<br>La etiqueta de apertura es &lt;!-- Aquí está nuestro comentario y la de cierre es --&gt;. El usuario que visite nuestra web no verá estos comentarios a no ser que le eche un vistazo al código fuente.</p>
-
-<h2>Títulos en nuestra web</h2>
-<p>Los título preceden un articulo, nos aportan una breve descripción de lo que vamos a leer a continuación, son importantes de cara a los buscadores (Google principalmente)<br>La etiqueta que utilizamos para introducir un título es: apertura &lt;h1&gt; y cierre &lt;/h1&gt; donde el número puede variar según el tamaño y la importancia que le queramos dar a ese título.</p>
-<p><h1>&lt;h1&gt;Esto es un título&lt;/h1&gt;</h1><h2>&lt;h2&gt;Esto es otro título&lt;/h2&gt;</h2><h3>&lt;h3&gt;Aqui otro algo mas pequeño&lt;/h3&gt;</h3><h4>&lt;h4&gt;Doy entrada aun artículo poco importante&lt;/h4&gt;</h4><h5>&lt;h5&gt;Título con etiqueta h5 todavia mas pequeño&lt;/h5&gt;</h5></p>
-
-
-<h2>Texto</h2>
-
-<h3>Párrafos</h3>
-<p>Para redactar nuestro artículo o escribir en nuestra web de forma normal, utilizaremos las etiquetas de párrado &lt;p&gt; como etiqueta de apertura y &lt;/p&gt; como etiqueta de cierre:<br>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.&lt;/p&gt;</p>
-
-<h3>Texto original</h3>
-<p>Para redactar un texto tal y como lo hemos escrito,con sus tabulaciones y estapacios, usaremos la etiqueta &lt;pre&gt; &lt;/pre&gt;</p>
-
-<pre>
-&lt;pre&gt;
-		Esto es un
-texto de ejemplo   para demostrar
-	las tabulaciones y los
-		espacios incluidos en
-	él.
-&lt;/pre&gt;</pre>
-
-
-
-<h3>Saltos de línea</h3>
-<p>Si queremos implementar saltos de línea podemos hacerlo con la etiqueta única &lt;br/&gt; en el interior de cualquier texto.</p>
-
-<p>Para introducir saltos de línea en el texto usaremos la etiqueta vacía &lt;br&gt;<br>&lt;p&gt;Esto es un texto de ejemplo de una línea y &lt;br&gt;ya se a producido un salto de línea&lt;/p&gt;</p>
-<p>Esto es un texto de ejemplo de una línea y <br>ya se a producido un salto de línea</p>
-
-
-<h3>Remarcado de texto</h3>
-<p>Podemos usar ciertas etiquetas para remarcar las palabras a las que queramos dar cierto énfasis o hacer especial incapié sobre ellas.Podemos usar negrita, cursiva o subrayado<br>Para poner una palabra en negrita usamos las etiquetas&lt;b&gt; y &lt;/b&gt;<br>Para usar la cursiva utilizamos &lt;i&gt; y &lt;/i&gt;<br>Para remarca con subrayado escribimos &lt;u&gt; y &lt;/u&gt;</p>
-
-<p>Esta &lt;b&gt;palabra&lt;/b&gt; está en negrita<br>Esta &lt;i&gt;palabra&lt;/i&gt; está en cursiva<br>Esta &lt;u&gt;palabra&lt;/u&gt; está subrayada</p>
-
-<p>Esta <b>palabra</b> está en negrita<br>Esta <i>palabra</i> está en cursiva<br>Esta <u>palabra</u> está subrayada</p>
-
-
-<h3>Resaltado</h3>
-<p>Para resaltar palabras o conjunto de palabras uusaremos las siguientes etiquetas</p>
-<p>&lt;strong&gt; &lt;/strong&gt; Para resaltar una parte del texto importante, seria o urgente.<br>&lt;small&gt; &lt;/small&gt; Para hacer referendia a la letra pequeña, por ejemplo, de un contrato.<br>&lt;s&gt; &lt;/s&gt; Representa contenido inherente u obsoleto.<br>&lt;em&gt; &lt;/em&gt; Pone énfasis o recalca una parte del texto.</p>
-
-<p>Esto es un &lt;strong&gt;texto resaltado&lt;/strong&gt; con strong, texto importante.<br>Esto es un &lt;small&gt;texto resaltado&lt;/small&gt; con small, letra pequeña.<br>Esto es un &lt;s&gt;texto resaltado&lt;/s&gt; con s, contenido inherente u obsoleto.<br>Esto es un &lt;em&gt;texto resaltado&lt;/em&gt; con em, pone énfasis.</p>
-
-<p>Esto es un <strong>texto resaltado</strong> con strong, texto importante.<br>Esto es un <small>texto resaltado</small> con small, letra pequeña.<br>Esto es un <s>texto resaltado</s> con s, contenido inherente u obsoleto.<br>Esto es un <em>texto resaltado</em> con em, pone énfasis.</p>
-
-
-<h2>Listas</h2>
-<p>Las listas nos ofrecen la posibilidad de enumerar o listar un texto. Tenemos listas ordenadas, istas desordenadas y listas de definición</p>
-
-<h3>Listas desordenadas</h3>
-<p>Para hacer una lista desordenada usaremos las etiquetas &lt;ul&gt; y &lt;/ul&gt; para indicar que dentro hay una lista. Para listar cada elemento de la lista lo pondremos dentro de las etiquetas &lt;li&gt; y &lt;/li&gt; tantas veces como sea necesario:</p>
-<p>&lt;ul&gt;<br/>&lt;li&gt;Soy el primer elemento de la lista&lt;/li&gt;<br/>&lt;li&gt;Yo soy el segundo&lt;/li&gt;<br/>&lt;li&gt;Soy otro elemento de esta lista&lt;/li&gt;<br/>&lt;/ul&gt;</p>
-
-<ul><li>Soy el primer elemento de la lista</li><li>Yo soy el segundo</li><li>Soy otro elemento de esta lista</li></ul>
-
-
-<h3>Listas ordenadas</h3>
-<p>Se caracterizan por estar enumeradas de forma ascencente.<br/>Las etiquetas para englobar este tipo de listas son &lt;ol&gt; y &lt;/ol&gt; y en su interior las etiquetas para listar cada elemento &lt;li&gt; y &lt;li&gt;</p>
-<p>&lt;ol&gt;<br/>&lt;li&gt;Soy el number one&lt;/li&gt;<br/>&lt;li&gt;Un elemeno de la lista&lt;/li&gt;<br/>&lt;li&gt;Otro elemento de la lista&lt;/li&gt;<br/>&lt;li&gt;Otro massss&lt;/li&gt;<br/>&lt;/ol&gt;</p>
-
-<ol>
-	<li>Soy el number one</li>
-	<li>Un elemeno de la lista</li>
-	<li>Otro elemento de la lista</li>
-	<li>Otro massss</li>
-</ol>
-
-
-<h3>Listas de definición</h3>
-<p>Como su nombre indica sirven para crear una estructura característica a la hora de enumerar y definir varios términos con un formato propio de un diccionario.<br>La etiqueta que engloba esta lista es &lt;dl&gt; y &lt;/dl&gt; que la usaremos para para definir las listas de definición.<br>Para nombrar los términos a definir de la lista usaremos &lt;dt&gt; y &lt;/dt&gt; y para hacer las definiciones de cada término usaremos &lt;dd&gt; y &lt;/dd&gt;</p>
-
-<pre>&lt;dl&gt;<br>
-
-	&lt;dt&gt;Programación&lt;/dt&gt;<br>
-	&lt;dd&gt;Asisgnatura donde aprenderemos a programar en lenguaje Java, con el IDE Eclipse.<br>Aprenderemos bucles, clases, metodos, constructores, herencia, polimorfismo, funciones...&lt;/dd&gt;<br><br>
-
-	&lt;dt&gt;Sistemas&lt;/dt&gt;<br>
-	&lt;dd&gt;Asignatura enfocada a los diferentes sistemas operativos.<br> Se aprenderá a utilizar sistemas Linux, Windows, y posteriormente temática dedicada a las redes y su infraestructura.&lt;/dd&gt;<br><br>
-
-	&lt;dt&gt;Lenguaje de marcas&lt;/dt&gt;<br>
-	&lt;dd&gt;En esta asignatura aprenderemos a usar lnguajes de marcas con HTML5 y CSS3,<br>creación de páginas webs y los estándares de estos lenguajes.&lt;/dd&gt;<br>
-
-&lt;/dl&gt;</pre>
-
-<dl>
+<header>
+	<div class="cabecera">
+		<img class="imagen" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width="200" height="100" alt="imagen_de_cabecera">
 	
-	<dt>Programación</dt>
-		<dd>Asisgnatura donde aprenderemos a programar en lenguaje Java, con el IDE Eclipse.<br>Aprenderemos bucles, clases, metodos, constructores, herencia, polimorfismo, funciones...</dd>
+		<div class="titulo">
+    		<h1 class="manual">Manual de HTML5</h1>
+		</div>
+	</div>
 
-	<dt>Sistemas</dt>
-		<dd>Asignatura enfocada a los diferentes sistemas operativos.<br> Se aprenderá a utilizar sistemas Linux, Windows, y posteriormente temática dedicada a las redes y su infraestructura.</dd>
+	<h4 class="entradilla">Bienvenido al Manual de HTML5 donde vamos a explicar como desarrollar páginas web utilizando el lenguaje Html5</h4>
 
-	<dt>Lenguaje de marcas</dt>
-		<dd>En esta asignatura aprenderemos a usar lnguajes de marcas con HTML5 y CSS3,<br>creación de páginas webs y los estándares de estos lenguajes.</dd>
+	<p class="parrafo1">HTML5 es un lenguaje de marcas (Hyper Text Markup Language) usado para estructurar y presentar el contenido para la web. Es uno de los aspectos fundamentales para el funcionamiento de los sitios. Es de hecho la quinta revisión del estándar que fue creado en 1990. La W3C la recomendó para transformarse en el estándar a ser usado en el desarrollo de proyectos venideros. HTML5 está relacionado también con la entrada en decadencia del viejo estándar HTML4, que se combinaba con otros lenguajes para producir los sitios que podemos ver hoy en día.</p>
+</header>
 
-</dl>
+<article>
+	<h2>Estructura</h2>
+	<p class="parrafo">Todo documento html debe tener la siguiente estructura básica:</p>
+	<div class ="contenedor1">
+		<div class ="izq">
+			<p>&lt;!DOCTYPE html&gt;<br>&lt;html lang="lenguaje_de_mi_página"&gt;<br>&lt;head&gt;<br>&lt;title&gt;Título de la página&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</p>
+		</div>
+
+		<div class ="dxa">
+			<p>Donde <strong>&lt;!DOCTYPE html&gt;</strong> es el tipo de documento, en nuestro caso es html.<br><strong>&lt;html lang="es"&gt;</strong> es la etiqueta que define el lenguaje de nuestra página de cara a los buscadores.<br>La etiqueta de apertura <strong>&lt;head&gt;</strong> y de cierre <strong>&lt;/head&gt;</strong> hace referencia a la cabecera de nuestro documento<br>La etiqueta <strong>&lt;title&gt;</strong> y <strong>&lt;/title&gt;</strong> contiene el título descriptivo de la página actual, es el texto que aparece en la pestaña del navegador, importante de cara al SEO.<br>Estiquetas <strong>&lt;body&gt;</strong> y <strong>&lt;body/&gt;</strong> aquí es donde va el cuerpo del documento, nuestra página en sí, lo que verá el usuario.<br><strong>&lt;/html&gt;</strong> etiqueta de cierre, fin del documento html.</p>
+		</div>
+	</div>
 
 
-<h2>Listas de navegación</h2>
-<p>Las etiquetas de navegación &lt;nav&gt; y &lt;/nav&gt; confieren una parte importante a nuestra página, ya que los buscadores encuentran ella información referente a la navegación en nuestro sito. Se utilzan para crear barras de menús, principalmente.<br>Al formar listas, dentro de esta etiqueta encontraremos otras etiquetas propias de las listas como son &lt;ul&gt; o &lt;ol&gt; según el tipo de lista y &lt;li&gt; para listar cada elemento.<br>Este sería un ejemplo de un menú de navegación:</p>
+	<p class="parrafo">Entre las etiquetas <strong>&lt;head&gt;</strong> y <strong>&lt;/head&gt;</strong> incluiremos las <b>metaetiquetas</b>. Las metaetiquetas aportan información a los buscadores sobre nuetra web, como codificación de carácteres, autor de la página, contenido, palabras clave, descripción de la página...<br>Estas etiquetas tienen la siguiente sintaxis <strong>&lt;meta name="valor1" content="valor2"&gt;</strong>, el atributo <b>name</b> puede adquirir valores como "author", "description", "robots", "keywords"... Un atributo a tener en cuenta es <strong>&lt;meta charset="utf-8"&gt;</strong> que es el que aplica la codificación utf-8 y permite que se muestren las letras con tilde, eñes etc..</p>
+</article>
 
-<p>Mi Menú</p>
-<pre>&lt;nav&gt;<br>
+
+<article>
+	<h2>Comentarios en el documento HTML</h2>
+	<p class="parrafo">Los comentarios en el documento html ayudan al desarrollador a organizarse dentro del código fuente. Estos comentarios pueden indicar inicio y fin de una estructura, sección en la que se encuentra, funcionamiento de un script o función, características de un código ...<br>La etiqueta de apertura es <strong>&lt;!--</strong> Aquí está nuestro comentario y la de cierre es <strong>--&gt;</strong>. El usuario que visite nuestra web no verá estos comentarios a no ser que mire el código fuente.</p>
+</article>
+
+<section>
+	<h2>Títulos</h2>
+	<p class="parrafo">Los títulos preceden un articulo, aportan una breve descripción de lo que vamos a leer a continuación, son importantes de cara a los buscadores, Google principalmente.<br>La etiqueta que utilizamos para introducir un título es: apertura <strong>&lt;h1&gt;</strong> y cierre <strong>&lt;/h1&gt;</strong> donde el número puede variar según el tamaño y la importancia que le queramos dar a ese título.</p>
+	
+	<div class="contenedor1">
+		<div class ="izq">
+			<p><b>&lt;h1&gt;</b>Esto es un título de contenido importante<b>&lt;/h1&gt;</b><br><br><b>&lt;h2&gt;</b>Esto es otro título importante<b>&lt;/h2&gt;</b><br><br><b>&lt;h3&gt;</b>Otro con menos importancia<b>&lt;/h3&gt;</b><br><br><b>&lt;h4&gt;</b>Doy entrada aun artículo poco importante<b>&lt;/h4&gt;</b><br><br><b>&lt;h5&gt;</b>Título con etiqueta h5 todavia mas pequeño<b>&lt;/h5&gt;</b></p>
+		</div>
+		
+		<div class ="dxa">
+			<h1>Esto es un título de contenido importante</h1><br><h2 class="tit2">Esto es otro título importante</h2><br><h3 class="tit3">Otro con menos importancia</h3><br><h4>Doy entrada aun artículo poco importante</h4><br><h5>Título con etiqueta h5 todavia mas pequeño</h5>
+		</div>
+	</div>
+</section>
+
+
+<section>
+	<h2>Texto</h2>
+		<article>
+			<h3>Párrafos</h3>
+			<p class="parrafo">Para redactar nuestro artículo o escribir en nuestra web de forma normal, utilizaremos las etiquetas de párrado <strong>&lt;p&gt;</strong> como etiqueta de apertura y <strong>&lt;/p&gt;</strong> como etiqueta de cierre. Podemos incluir tantas etiquetas como sea necesario.</p>
+
+			<div class ="contenedor2">
+				<div class ="izq">
+					<p><b>&lt;p&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<b>&lt;/p&gt;</b></p>
+				</div>
+
+				<div class ="dxa">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</article>
+	
+
+	<article>
+		<h3>Texto preformateado</h3>
+		<p class="parrafo">Para redactar un texto tal y como lo hemos escrito, con sus tabulaciones y espacios, usaremos la etiqueta <strong>&lt;pre&gt; &lt;/pre&gt;</strong></p>
+
+		<div class ="contenedor3">
+			<div class ="izq">
+				<pre>
+	<!-- Desindentación para el ejemplo-->
+<b>&lt;pre&gt;</b>
+	Esto es un
+texto de ejemplo      para demostrar
+	las tabulaciones y los
+			espacios incluidos en
+		él.
+<b>&lt;/pre&gt;</b>
+				</pre>
+			</div>
+
+			<div class ="dxa">
+				<pre>
+	<!-- Desindentación para el ejemplo-->
+	Esto es un
+texto de ejemplo      para demostrar
+	las tabulaciones y los
+			espacios incluidos en
+		él.
+				</pre>
+			</div>
+		</div>
+	</article>
+	
+
+	<article>
+		<h3>Saltos de línea</h3>
+		<p class="parrafo">Si queremos implementar saltos de línea podemos hacerlo con la etiqueta vacía <strong>&lt;br&gt;</strong> en el interior de cualquier texto.</p>
+
+		<div class ="contenedor2">
+			<div class ="izq">
+				<p>&lt;p&gt;Esto es un texto de ejemplo de una línea y <b>&lt;br&gt;</b>ya se a producido un salto de línea&lt;/p&gt;</p>
+			</div>
+
+			<div class ="dxa">
+				<p>Esto es un texto de ejemplo de una línea y <br>ya se a producido un salto de línea</p>
+			</div>
+		</div>
+	</article>
+	
+
+	<article>
+		<h3>Remarcado de texto</h3>
+		<p class="parrafo">Podemos usar ciertas etiquetas para remarcar las palabras a las que queramos dar cierto énfasis o hacer especial incapié sobre ellas. Podemos usar negrita, cursiva o subrayado<br>Para poner una palabra en negrita usamos las etiquetas<strong>&lt;b&gt;</strong> y <strong>&lt;/b&gt;</strong><br>Para usar la cursiva utilizamos <strong>&lt;i&gt;</strong> y <strong>&lt;/i&gt;</strong><br>Para remarca con subrayado escribimos <strong>&lt;u&gt;</strong> y <strong>&lt;/u&gt;</strong></p>
+
+		<div class ="contenedor4">
+			<div class ="izq">
+				<p>Esta <b>&lt;b&gt;</b>palabra<b>&lt;/b&gt;</b> está en negrita<br>Esta <b>&lt;i&gt;</b>palabra<b>&lt;/i&gt;</b> está en cursiva<br>Esta <b>&lt;u&gt;</b>palabra<b>&lt;/u&gt;</b> está subrayada</p>
+			</div>
+
+			<div class ="dxa">
+				<p>Esta <b>palabra</b> está en negrita<br>Esta <i>palabra</i> está en cursiva<br>Esta <u>palabra</u> está subrayada</p>
+			</div>
+		</div>
+	</article>
+
+	<article>
+		<h3>Resaltado</h3>
+		<p class="parrafo">Para resaltar palabras o conjunto de palabras uusaremos las siguientes etiquetas:<br><strong>&lt;strong&gt; &lt;/strong&gt;</strong> Para resaltar una parte del texto importante, seria o urgente.<br><strong>&lt;small&gt; &lt;/small&gt;</strong> Para hacer referendia a la letra pequeña, por ejemplo, de un contrato.<br><strong>&lt;s&gt; &lt;/s&gt;</strong> Representa contenido inherente u obsoleto.<br><strong>&lt;em&gt; &lt;/em&gt;</strong> Pone énfasis o recalca una parte del texto.</p>
+
+		<div class ="contenedor5">
+			<div class ="izq">
+				<p>Esto es un <b>&lt;strong&gt;</b>texto resaltado<b>&lt;/strong&gt;</b> con strong, texto importante.<br>Esto es un <b>&lt;small&gt;</b>texto resaltado<b>&lt;/small&gt;</b>con small, letra pequeña.<br>Esto es un <b>&lt;s&gt;</b>texto resaltado<b>&lt;/s&gt;</b> con s, contenido inherente u obsoleto.<br>Esto es un <b>&lt;em&gt;</b>texto resaltado<b>&lt;/em&gt;</b> con em, pone énfasis.</p>
+			</div>
+
+			<div class ="dxa">
+				<p>Esto es un <strong>texto resaltado</strong> con strong, texto importante.<br>Esto es un <small>texto resaltado</small> con small, letra pequeña.<br>Esto es un <s>texto resaltado</s> con s, contenido inherente u obsoleto.<br>Esto es un <em>texto resaltado</em> con em, pone énfasis.</p>
+			</div>
+		</div>
+	</article>
+</section>
+
+<section>
+	<h2>Etiquetas semánticas</h2>
+	<article>
+		<h3>Header</h3>
+		<p class="parrafo">Debe englobar aquellos elementos correspondientes a la cabecera de la página con las etiquetas <strong>&lt;header&gt;</strong> y <strong>&lt;/header&gt;</strong>.</p>
+		
+	</article>
+
+	<article>
+		<h3>Article</h3>
+		<p class="parrafo">Usaremos la etiqueta <strong>&lt;article&gt; &lt;/article&gt;</strong> para representar un contenido específico de nuestra web. Puede representar un artículo, ya sea un artículo de opinión, un entrada en un blog, un comentario en un foro, una noticia, una descarga, o simplemente un contenido estático de una web como el típico quienes somos o a qué nos dedicamos.</p>
+	</article>
+
+	<article>
+		<h3>Section</h3>
+		<p class="parrafo">Usaremos la etiqueta <strong>&lt;section&gt; &lt;/section&gt;</strong> para representar un bloque de nuestra página que tiene valor semántico, es decir, que aporta un significado a la página.</p>
+	</article>
+
+	<article>
+		<h3>Aside</h3>
+		<p class="parrafo">Usaremos la etiqueta <strong>&lt;aside&gt; &lt;/aside&gt;</strong> para representar una sección de una página que tiene contenido de poca importancia relacionado con el contenido que le rodea, el cual podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>
+	</article>
+
+	<article>
+		<h3>Footer</h3>
+		<p class="parrafo">El pié de página en las páginas html es una zona donde se suele añadir el autor del documento, enlaces a contenido relacionado, información de copyright, avisos legales, información de contacto, etc. Se implementa con las etiquetas de apertura y cierre respectivamente <strong>&lt;footer&gt; &lt;/footer&gt;</strong><br>Otra etiqueta que se suele introducir en el footer es <strong>&lt;address&gt; &lt;/address&gt;</strong> donde indicaremos información referida al contacto de la web como email, dirección de la empresa, teléfono, o fax.</p>
+			
+		<div class ="contenedor6">
+			<div class ="izq">
+		<!-- Desindentación para el ejemplo -->
+				<pre>
+<b>&lt;footer&gt; 
+	&lt;address&gt;</b>
+	
+	   Manual de Html5<br>
+	   Perico el de los palotes<br>
+	   Calle Camino de los Olivos, nave 47<br>
+	   personadecontacto@contacto.com<br>
+	   976 34 35 36<br>
+	   623 11 23 43
+	
+	<b>&lt;/address&gt;
+&lt;/footer&gt;</b>
+				</pre>
+			</div>
+				
+			<div class ="dxa">
+				<footer>
+					<address> 
+							Manual de Html5<br>
+							Perico el de los palotes<br>
+							Calle Camino de los Olivos, nave 47<br>
+							personadecontacto@contacto.com<br>
+							976 34 35 36<br>
+							623 11 23 43
+					</address>
+				</footer>
+			</div>
+		</div>
+	</article>
+</section>
+
+
+<section>
+	<h2>Listas</h2>
+	<p class="parrafo">Las listas nos ofrecen la posibilidad de enumerar o listar un texto. Tenemos listas desordenadas, listas ordenadas, listas de definición y listas de navegación.</p>
+
+	<article>
+		<h3>Listas desordenadas</h3>
+		<p class="parrafo">Para hacer una lista desordenada usaremos las etiquetas <strong>&lt;ul&gt;</strong> y <strong>&lt;/ul&gt;</strong> para indicar que dentro hay una lista. Para listar cada elemento de la lista lo pondremos dentro de las etiquetas <strong>&lt;li&gt;</strong> y <strong>&lt;/li&gt;</strong> tantas veces como sea necesario.</p>
+
+		<div class ="contenedor3">
+			<div class ="izq">
+				<p><b>&lt;ul&gt;<br/>&lt;li&gt;</b>Soy el primer elemento de la lista<b>&lt;/li&gt;<br/>&lt;li&gt;</b>Yo soy el segundo<b>&lt;/li&gt;<br/>&lt;li&gt;</b>Soy otro elemento de esta lista<b>&lt;/li&gt;<br/>&lt;/ul&gt;</b></p>
+			</div>
+
+			<div class ="dxa">
+				<ul style="margin-left: 15px;">
+					<li>Soy el primer elemento de la lista</li>
+					<li>Yo soy el segundo</li>
+					<li>Soy otro elemento de esta lista</li>
+				</ul>
+			</div>
+		</div>
+	</article>
+
+	<article>
+		<h3>Listas ordenadas</h3>
+		<p class="parrafo">Se caracterizan por estar enumeradas de forma ascencente.<br/>Las etiquetas para englobar este tipo de listas son <strong>&lt;ol&gt; &lt;/ol&gt;</strong> y en su interior las etiquetas para listar cada elemento <strong>&lt;li&gt; &lt;/li&gt;</strong></p>
+
+		<div class ="contenedor3">
+			<div class ="izq">
+				<p><b>&lt;ol&gt;<br/>&lt;li&gt;</b>Soy el number one<b>&lt;/li&gt;<br/>&lt;li&gt;</b>Un elemeno de la lista<b>&lt;/li&gt;<br/>&lt;li&gt;</b>Otro elemento de la lista<b>&lt;/li&gt;<br/>&lt;li&gt;</b>Otro massss<b>&lt;/li&gt;<br/>&lt;/ol&gt;</b></p>
+			</div>
+
+			<div class ="dxa">
+				<ol style="margin-left: 15px;">
+					<li>Soy el number one</li>
+					<li>Un elemeno de la lista</li>
+					<li>Otro elemento de la lista</li>
+					<li>Otro massss</li>
+				</ol>
+			</div>
+		</div>
+	</article>
+
+	<article>
+		<h3>Listas de definición</h3>
+		<p class="parrafo">Como su nombre indica sirven para crear una estructura característica a la hora de enumerar y definir varios términos con un formato propio de un diccionario.<br>La etiqueta que engloba esta lista es <strong>&lt;dl&gt;</strong> y <strong>&lt;/dl&gt;</strong> que la usaremos para para definir las listas de definición.<br>Para nombrar los términos a definir de la lista usaremos <strong>&lt;dt&gt;</strong> y <strong>&lt;/dt&gt;</strong> y para hacer las definiciones de cada término usaremos <strong>&lt;dd&gt;</strong> y <strong>&lt;/dd&gt;</strong></p>
+
+		<div class ="contenedor7">
+			<div class ="izq">
+				<pre>
+		<!-- Desindentación para el ejemplo-->
+<b>&lt;dl&gt;<br>
+
+	&lt;dt&gt;</b>Programación<b>&lt;/dt&gt;<br>
+	&lt;dd&gt;</b>Asisgnatura donde aprenderemos a programar en lenguaje Java, 
+	con el IDE Eclipse. Aprenderemos bucles, clases, metodos,
+	constructores, herencia, polimorfismo, funciones...<b>&lt;/dd&gt;<br><br>
+
+	&lt;dt&gt;</b>Sistemas<b>&lt;/dt&gt;<br>
+	&lt;dd&gt;</b>Asignatura enfocada a los diferentes sistemas operativos.
+	Se aprenderá a utilizar sistemas Linux, Windows, y posteriormente
+	temática dedicada a las redes y su infraestructura.<b>&lt;/dd&gt;<br><br>
+
+	&lt;dt&gt;</b>Lenguaje de marcas<b>&lt;/dt&gt;<br>
+	&lt;dd&gt;</b>En esta asignatura aprenderemos a usar lnguajes de marcas 
+	con HTML5 y CSS3, creación de páginas webs y los estándares de 
+	estos lenguajes.<b>&lt;/dd&gt;<br>
+
+&lt;/dl&gt;</b>
+				</pre>
+			</div>
+
+			<div class ="dxa">
+				<dl>
+					<dt>Programación</dt>
+					<dd>Asisgnatura donde aprenderemos a programar en lenguaje Java, con el IDE Eclipse.<br>Aprenderemos bucles, clases, metodos, constructores, herencia, polimorfismo, funciones...</dd>
+
+					<dt>Sistemas</dt>
+					<dd>Asignatura enfocada a los diferentes sistemas operativos.<br> Se aprenderá a utilizar sistemas Linux, Windows, y posteriormente temática dedicada a las redes y su infraestructura.</dd>
+
+					<dt>Lenguaje de marcas</dt>
+					<dd>En esta asignatura aprenderemos a usar lnguajes de marcas con HTML5 y CSS3,<br>creación de páginas webs y los estándares de estos lenguajes.</dd>
+
+				</dl>
+			</div>
+		</div>
+	</article>
+
+	<article>
+		<h3>Listas de navegación</h3>
+		<p class="parrafo">Las etiquetas de navegación <strong>&lt;nav&gt;</strong> y <strong>&lt;/nav&gt;</strong> confieren una parte importante a nuestra página, ya que los buscadores encuentran en ella información referente a la navegación en nuestro sito. Se utilizan para crear barras de menús, principalmente.<br>Al formar listas, dentro de esta etiqueta encontraremos otras etiquetas propias de las listas como son <strong>&lt;ul&gt;</strong> o <strong>&lt;ol&gt;</strong> según el tipo de lista y <strong>&lt;li&gt;</strong> para listar cada elemento.<br>Este sería un ejemplo de un menú de navegación:</p>
+
+		<div class ="contenedor8">
+			<div class ="izq">
+			<!-- Desindentacion para el ejemplo-->
+				<pre>
+<b>&lt;nav&gt;<br>
 	&lt;ul&gt;<br>
-		&lt;li&gt;Índice&lt;/li&gt;<br>
-		&lt;li&gt;Productos&lt;/li&gt;<br>
-		&lt;li&gt;Servicios&lt;/li&gt;<br>
-		&lt;li&gt;Contacto&lt;/li&gt;<br>
+		&lt;li&gt;</b>Índice<b>&lt;/li&gt;<br>
+		&lt;li&gt;</b>Productos<b>&lt;/li&gt;<br>
+		&lt;li&gt;</b>Servicios<b>&lt;/li&gt;<br>
+		&lt;li&gt;</b>Contacto<b>&lt;/li&gt;<br>
 	&lt;/ul&gt;<br>
-&lt;/nav&gt;</pre>
+&lt;/nav&gt;</b>
+				</pre>
+			</div>
 
-<p>Mi Menú</p>
-<nav>
-	<ul>
-		<li>Índice</li>
-		<li>Productos</li>
-		<li>Servicios</li>
-		<li>Contacto</li>
-	</ul>
-</nav>
+			<div class ="dxa">
+				<nav style="margin-left: 15px;">
+					<ul>
+						<li>Índice</li>
+						<li>Productos</li>
+						<li>Servicios</li>
+						<li>Contacto</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</article>
+</section>
+
+<section>
+	<h2>Hiperenlaces</h2>
+	<article>
+		<h3>Hiperenlaces externos</h3>
+		<p class="parrafo">Los hiperenlaces son una parte fundamenta en el desarrollo de una página web. El usuario puede interactuar con los enlaces moviéndose hacia fuentes externas.<br>Las etiquetas para poner enlaces son <strong>&lt;a&gt; &lt;/a&gt;</strong>. Entre estas etiquetas pondremos el texto que queremos que se vea, donde el usuario hará click:<br><b>&lt;a&gt;¡Clíckame!&lt;/a&gt;</b>, y para indicar dónde apunta el enlace usaremos <b>href="miUrl"</b> dentro de la etiqueta de apertura &lt;a&gt; de esta manera &lt;a href="www.google.com"&gt;, quedando de la siguiente forma:</p>
+
+		<div class ="contenedor2">
+			<div class ="izq">
+				<p>Haz <b>&lt;a href="</b>https://www.google.es<b>"&gt;</b>click aquí<b>&lt;/a&gt;</b>para dirigirte a Google.</p>
+			</div>
+			<div class ="dxa">
+				<p>Haz <a href="https://www.google.es">click aquí</a> para dirigirte a Google</p>
+			</div>
+		</div>
+	</article>
+
+	<article>
+		<h3>Hiperenlaces internos</h3>
+		<p class="parrafo">Son usados para que el usuario se desplace de forma rápida por el documento o por las páginas de nuestra web.<br>Necesitamos dos cosas: una <u>referencia</u> hacia dónde movernos y un <u>enlace</u> que apunte hacia esa referencia. Por ejemplo, si queremos ir a la parte superior de la página, en esa parte superior colocaremos la referencia con la siguiente estructura  <strong>&lt;etiqueta id="nobre_identificador"&gt; &lt;/etiqueta&gt;</strong>, por ejemplo &lt;p id="Arriba"&gt; &lt;/p&gt; y en la parte inferior del documento colocaremos el enlace que lleva hasta esa etiqueta &lt;a href="Arriba"&gt;Ir arriba&lt;/a&gt;<br>Si clicamos en el siguiente enlace nos moverá a la parte superior de la página:</p><br>
+
+		<a href="#Arriba">Ir arriba</a>
+	
+	</article>
+	
+	<br><br>
+
+	<article>
+		<h4>Rutas absolutas y rutas relativas</h4>
+		<p class="parrafo">Entendemos como ruta absoluta aquella dirección o URL que tiene una sintaxis completa, por ejemplo https://www.unaWeb.com/img/fondos/miImagen.gif<br>Entendemos como ruta relativa aquella dirección que, partiendo desde el index (página principal), se extiende hasta otra página de nuestro sitio, por ejemplo img/fondos/miImagen.gif.</p>
+	</article>
+</section>
 
 
-<h2>Hiperenlaces</h2>
-<h3>Hiperenlaces externos</h3>
-<p>Los hiperenlaces o enlaces son una parte fundamenta en el desarrollo de una página web. El usuario puede interactuar con los enlaces moviéndose hacia fuentes externas.<br>Las etiquetas para poner enlaces son &lt;a&gt; &lt;/a&gt;. Entre estas etiquetas pondremos el texto que queremos que se vea, donde el usuario hará click:<br>&lt;a&gt;¡Clíckame!&lt;/a&gt;, y para indicar dónde apunta el enlace usaremos href="miUrl" dentro de la etiqueta de apertura &lt;a&gt; de esta forma &lt;a href="www.google.com"&gt;, quedando de la siguiente forma:<br><br>Haz &lt;a href="https://www.google.es"&gt;click aquí&lt;/a&gt;para dirigirte a Google.</p>
+<section>
+	<h2>Inserción de imágenes</h2>
+	<p class="parrafo">La etiqueta para mostrar imágenes en nuestra página es <strong>&lt;img&gt;</strong>, es una etiqueta vacía por lo que no tiene etiqueta de cierre. Dentro de ella debemos indicarle al navegador el origen de la imagen mediante el atributo <strong>scr="miUrl"</strong> y la URL donde esté nuestra imagen elegida &lt;img src="https://www.unaWeb.com/imagen.jpg"&gt;. También debemos tener como norma colocar siempre el atributo <strong>alt="DescripciónDeLaImagen"</strong> , el cual da una breve descripción de la imagen, ayuda a personas invidentes a saber de qué trata la imagen y nos da puntos de cara al SEO, &lt;img src="https://www.unaWeb.com/imagen.jpg" alt="logotipo_de_la_empresa"&gt;.<br>Además elegiremos las dimensiones a nuestro gusto, dándole un ancho y un alto deseado para que nos quede a la medida correcta. El atributo del ancho es <strong>width="número_en_pixels"</strong> y del alto es <strong>heigth="número_en_pixels"</strong>.<br>La inserción de una imagen quedaría así:</p>
 
-<p>Haz <a href="https://www.google.es">click aquí</a> para dirigirte a Google</p>
+	<div class ="contenedor9">
+		<div class ="izq">
+			<p><b>&lt;img src="</b>http://jsequeiros.com/sites/default/files/imagen-cachorro-comprimir.jpg?1399003306<b>" width="200" heigth="150" alt="</b>cachorro_de_tigre<b>"&gt;</b></p>
+		</div>
 
-<h3>Hiperenlaces internos</h3>
-<p>Son usados para que el usuario se desplace de forma rápida por el documento o por las páginas de nuestra web.<br>Necesitamos dos cosas: una referencia hacia dónde movernos y un enlace que apunte hacia esa referencia. Por ejemplo, si queremos ir a la parte superior de la página, en esa parte superior colocaremos la referencia con la siguiente estructura  &lt;etiqueta id="nobre_identificador"&gt; &lt;/cierre_etiqueta&gt;, por ejemplo &lt;p id="Arriba"&gt; &lt;/p&gt; y en la parte inferior del documento colocaremos el enlace que lleva hasta esa etiqueta &lt;a href="Arriba"&gt;Ir arriba&lt;/a&gt;<br>Si clicamos en el siguiente enlace nos moverá a la parte superior de la página:</p>
+		<div class ="dxa">
+			<img src="http://jsequeiros.com/sites/default/files/imagen-cachorro-comprimir.jpg?1399003306" width="200" height="150" alt="cachorro_de_tigre">
+		</div>
+	</div>
+</section>
 
-<a href="#Arriba">Ir arriba</a>
+<section>
+	<h2>Mapas de imágenes</h2>
+	<p class="parrafo">Un mapa de imagen es un mecanismo que nos permite utilizar una única imagen como “origen” de varios hipervínculos, de tal forma que a cada uno de esos hipervínculos le corresponde un área de la imagen. La estructura para hacer un mapa de imágenes es la siguiente:<br><br>&lt;img usermap="#palabra" src="archivo_imagen.extensión"&gt;<br>&lt;map name="palabra"&gt;<br>&lt;area shape="" coords="" href="" alt="" title=""&gt;<br>...<br>&lt;/map&gt;<br><br>En la etiqueta <strong>&lt;area&gt;</strong> hay un atributo <strong>shape=""</strong>, este atributo recibe los valores de <b>default</b> (toda la pantalla), <b>rect</b> (rectángulo), <b>circle</b> (círculo) y <b>poly</b> (polígono) según el tipo de formas que haya en la imagen.<br><br>El atributo <strong>coords=""</strong> es que lee las coordenadas de cada forma en la imagen. Podemos sacar las coordenadas con la ayuda de Paint.<br><br>Si nuestra forma es un <u>cuadrado o un rectángulo</u>:<br>shape="rect" coords="x1, y1, x2, y2" donde el primer par de coordenasa hace referencia a la esquina superior izquierda y el segundo par a la esquina inferior derecha.<br><br>Si nuestra forma es un <u>círculo</u>:<br>shape="circle" coords="x_centro, y_centro, radio" donde se dan las coordenadas del centro y el radio del círculo<br><br>Si nuestra forma es un <u>polígono</u>:<br>shape="poly" coords="x1, y1, x2, y2, x3, y3 ..." donde cada pareja de coordenadas hace referencia a cada vértice del polígono.<br><br>El resto de atributos ya los conocemos de la sección anterior. Mencionar que el valor del atributo <b>usermap</b> y el del <b>name</b> deben ser el mismo, obviando la almoadilla en usermap.<br><br>A continuación se muestra un código de ejemplo:<br><br></p>
 
-<h4>Rutas absolutas y rutas relativas</h4>
-<p>Entendemos como ruta absoluta aquella dirección o URL que tiene una sintaxis completa, por ejemplo https://www.unaWeb.com/img/fondos/miImagen.gif</p>
-<p>entendemos como ruta relativa aquella dirección que, partiendo desde el index (página principal), se extiende hasta otra página de nuestro sitio, por ejemplo /documentos/pdf/manual.pdf.</p>
+	<pre>
+&lt;img usemap="#formas" src="formas_mapa_imagenes.png" alt="ejemplo_formas"&gt;
+&lt;map name="formas"&gt;
+	&lt;area shape="circle" coords="75,58,38" href="#" alt="circ_rojo" title="Soy rojo"&gt;
+	&lt;area shape="rect" coords="100,144,205,188" href="#" alt="rect_naranja" title="Soy naranja"&gt;
+	&lt;area shape="poly" coords="178,96,266,96,221,31" href="#" alt="tri_verde" title="Soy verde"&gt;
+	&lt;area shape="rect" coords="294,104,356,163" href="#" alt="cua_amarillo" title="Soy amarillo"&gt;
+&lt;/map&gt;
+	</pre>
+	
+	<br>
+
+	<div class="mapa_img">
+		<img usemap="#formas" src="formas_mapa_imagenes.png" alt="ejemplo_formas">
+		<map name="formas">
+			<area shape="circle" coords="75,58,38" href="#" alt="circ_rojo" title="Soy rojo">
+			<area shape="rect" coords="100,144,205,188" href="#" alt="rect_naranja" title="Soy naranja">
+			<area shape="poly" coords="178,96,266,96,221,31" href="#" alt="tri_verde" title="Soy verde">
+			<area shape="rect" coords="294,104,356,163" href="#" alt="cua_amarillo" title="Soy amarillo">
+		</map>
+	</div>
+
+</section>
 
 
-<h2>Inserción de imágenes</h2>
-<p>La etiqueta para mostrar imágenes en nuestra página es &lt;img&gt;, es una etiqueta vacía por lo que no tiene etiqueta de cierre. Dentro de ella debemos indicarle al navegador de dónde debe extraer esa imagen y se lo diremos con el atributo scr="miUrl" (source, origen) y la URL donde esté nuestra imagen elegida &lt;img src="https://www.unaWeb.com/imagen.jpg"&gt;. También debemos tener como norma colocar siempre el atributo alt="miDescripción" , el cual da una breve descripción de la imagen, ayuda a personas invidentes a saber de qué trata la imagen y nos da puntos de cara al SEO, &lt;img src="https://www.unaWeb.com/imagen.jpg" alt="logotipo de la empresa"&gt;.<br>Además elgiremos las dimensiones a nuestro gusto, dándole un ancho y un alto deseado para que nos quede a la medida correcta. El atributo del ancho es width="número_en_pixels" y del alto es heigth="número_en_pixels".<br>La inserción de una imagen quedaría así &lt;img src="http://jsequeiros.com/sites/default/files/imagen-cachorro-comprimir.jpg?1399003306" width="200px" heigth="150px" alt="cachorro de tigre"&gt;</p>
+<section>
+	<h2>Tablas</h2>
+	<p class="parrafo">Para crear tablas en nuestra web utilizaremos las etiquetas <strong>&lt;table&gt;</strong> y <strong>&lt;/table&gt;</strong>. En la propia etiqueta de apertura definiremos el borde de la tabla con el atributo border="valor", donde valor solo puede ser o "0" o "1". Dentro de table, para representar las filas de la tabla utilizamos <strong>&lt;tr&gt; &lt;/tr&gt;</strong> y para las columnas <strong>&lt;td&gt; &lt;/td&gt;</strong>. Así pues si queremos hacer una tabla de tres por tres haremos:</p>
 
-<img src="http://jsequeiros.com/sites/default/files/imagen-cachorro-comprimir.jpg?1399003306" width="200px" height="150px" alt="cachorro de tigre">
+	<div class ="contenedor6">
+		<div class ="izq">
+			<pre>
+				<!-- Desindentacion para el ejemplo -->
+&lt;table border="1"&gt;
+	&lt;tr&gt;
+		&lt;td&gt;111111&lt;/td&gt;
+		&lt;td&gt;222222&lt;/td&gt;
+		&lt;td&gt;333333&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;444444&lt;/td&gt;
+		&lt;td&gt;555555&lt;/td&gt;
+		&lt;td&gt;666666&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;777777&lt;/td&gt;
+		&lt;td&gt;888888&lt;/td&gt;
+		&lt;td&gt;999999&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+			</pre>
+		</div>
 
-<h2>Mapas de imágenes</h2>
-<p>Continuará...</p>
+		<div class ="dxa">
+			<table border="1">
+				<tr>
+					<td>111111</td>
+					<td>222222</td>
+					<td>333333</td>
+				</tr>
+				<tr>
+					<td>444444</td>
+					<td>555555</td>
+					<td>666666</td>
+				</tr>
+				<tr>
+					<td>777777</td>
+					<td>888888</td>
+					<td>999999</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<br><br>
+	
+	<p class="parrafo">Tambien tenemos la posibilidad de combinar las celdas con el atributo rowspan="valor" para las columnas y colspan="valor" para las filas. Deberemos eliminar las celdas que no vayamos a usar para que la tabla mantenga las mismas proporciones.</p>
+	
+	<br>
 
-<h2>Pié de página</h2>
+	<article>
+		<h4>Uniendo columnas</h4>
+		<div class ="contenedor5">
+			<div class ="izq">
+				<pre>
+		<!-- Desindentación para el ejemplo -->
+&lt;tr&gt; 
+    &lt;td colspan="2"&gt;11111111&lt;/td&gt;
+&lt;!--&lt;td&gt;222222&lt;/td&gt;--&gt;
+    &lt;td&gt;333333&lt;/td&gt;
+&lt;/tr&gt;
+				</pre>
+			</div>
+
+			<div class ="dxa">
+				<table border="1">
+					<tr>
+						<td colspan="2">111111111111</td>
+						<!--<td>222222</td>-->
+						<td>333333</td>
+					</tr>
+					<tr>
+						<td>444444</td>
+						<td>555555</td>
+						<td>666666</td>
+					</tr>
+					<tr>
+						<td>777777</td>
+						<td>888888</td>
+						<td>999999</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</article>
+	
+	<br>
+
+	<article>
+		<br>
+		<h4>Uniendo filas</h4>
+		<div class ="contenedor9">
+			<div class ="izq">
+				<pre>
+				<!-- Desindentación para el ejemplo -->
+&lt;tr&gt; 
+    &lt;td rowspan="2"&gt;1111111&lt;/td&gt;
+    &lt;td&gt;222222&lt;/td&gt;
+    &lt;td&gt;333333&lt;/td&gt;
+&lt;/tr&gt;	
+
+&lt;tr&gt; 
+    &lt;!--&lt;td&gt;444444&lt;/td&gt;--&gt;
+	&lt;td&gt;5555555&lt;/td&gt;
+        &lt;td&gt;666666&lt;/td&gt;
+&lt;/tr&gt;
+
+				</pre>
+			</div>
+
+			<div class ="dxa">
+				<table border="1">
+					<tr>
+						<td rowspan="2">111111</td>
+						<td>222222</td>
+						<td>333333</td>
+					</tr>
+					<tr>
+						<!--<td>444444</td>-->
+						<td>555555</td>
+						<td>666666</td>
+					</tr>
+					<tr>
+						<td>777777</td>
+						<td>888888</td>
+						<td>999999</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</article>
+</section> <!-- fin sección tablas -->
 
 
+	<div class ="pie">
+		<hr>
+		<footer>
+			<address>
+				<br><br>
+				<p>
+				Manual de Html5<br>
+				Perico el de los palotes<br>
+				Calle Camino de los Olivos, nave 47<br>
+				personadecontacto@contacto.com<br>
+				976 34 35 36<br>
+				623 11 23 43
+				</p>
+			</address>
+		</footer>
+	</div>
 
-<br/><br/><br/><br/><br/>
+
+</div> <!-- fin cuerpo -->
 </body>
 </html>
