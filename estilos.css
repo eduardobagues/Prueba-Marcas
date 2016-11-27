@@ -1,0 +1,194 @@
+
+
+*{	margin:0px;
+	padding:0px;
+ }
+
+h2{ 
+	background-color: #333;
+	color: #FFF;
+	width: 90%; 
+	height: 50px;
+	text-align: center;
+	border: 2px solid #000;
+	border-radius: 12px;
+	margin: 0 auto;
+	margin-top: 40px;
+
+}
+
+h3{
+	background-color: orange;
+	margin-top: 50px;
+	padding: 5px;
+	width: 200px;
+	border: 2px solid #000;
+	border-radius: 9px;
+
+}
+
+.cabecera{ 
+			background-color: orange;
+			width: 95%;
+			height: 100px;
+			padding: 10px;
+			border-radius: 12px;
+			margin: 0 auto;
+		}
+
+
+.imagen{
+			width:18%;
+			height:100px;
+			float: left;
+		}
+
+
+.manual{
+			font-family:'Comic Sans MS';
+			font-size:44px;
+			text-align: center;
+		}
+
+
+.entradilla{ 
+
+				font-size: 25px;
+				margin-top: 10px;
+				width: 70%;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 20px;
+			}
+
+.titulo{ 
+			width:80%;
+			height:100px;
+			float:right;
+		}
+
+
+.cuerpo{ 	
+			width: 98%;
+			margin: 0 auto;
+			margin-top:5px;
+		}
+
+
+.contenedor1{ 	height: 230px;
+				width: 100%;
+				margin-top: 30px;
+			}
+
+.contenedor2{ 	height: 50px;
+				width: 100%;
+				margin-top: 30px;
+			}
+
+.contenedor3{ 	height: 130px;
+				width: 100%;
+				margin-top: 30px;
+			}
+
+.contenedor4{ 	height: 80px;
+				width: 100%;
+				margin-top: 30px;
+			}
+
+.contenedor5{ 	height: 100px;
+				width: 100%;
+				margin-top: 30px;
+			}
+
+.contenedor6{ 	height: 300px;
+				width: 100%;
+				margin-top: 30px;
+			}
+
+.contenedor7{ 	height: 450px;
+				width: 100%;
+				margin-top: 30px;
+			}
+
+.contenedor8{ 	height: 250px;
+				width: 100%;
+				margin-top: 30px;
+			}
+
+.contenedor9{ 	height: 180px;
+				width: 100%;
+				margin-top: 30px;
+			}
+
+
+.izq{ 
+		background-color:#CCC;
+		width:48%;
+		float: left;
+		padding: 5px;
+		border: 2px solid #000;
+		border-radius: 15px;
+	}
+
+
+.dxa{ 
+		background-color: #09F; /* 09F*/
+		width: 48%;
+		float: right;
+		padding: 5px;
+		border: 2px solid #000;
+		border-radius: 15px;
+	}
+
+
+
+.parrafo{ 
+			font-size: 18px;
+			margin-top: 10px;
+		}
+
+
+.parrafo1{
+
+			font-size: 18px;
+			margin-top: 10px;
+			text-align: center;
+		}
+
+.letra_tit{ margin-top: 10px; }
+
+.tit2{	background-color: #09F;
+		text-align: left;
+		margin-left:0px;
+		margin-top: 0px;
+		height: 25px;
+		border:0px solid;
+		color: #000;
+		font-size: 22px;
+	}
+
+.tit3{
+		background-color: #09F;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 0px;
+		height: 25px;
+		width: 90%;
+		border:0px solid;
+	}
+
+.mapa_img{
+			text-align: center;
+
+		}
+
+.pie{
+
+		background-color: grey;
+		width: 100%;
+		height: 200px;
+		text-align: center;
+		margin-top: 70px;
+	}
+
+
